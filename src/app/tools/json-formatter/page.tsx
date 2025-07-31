@@ -10,6 +10,7 @@ export default function JsonFormatterPage() {
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [copyToClipboard, setCopyToClipboard] = useState("Copy to Clipboard");
 
   useEffect(() => {
     try {
@@ -31,7 +32,10 @@ export default function JsonFormatterPage() {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(output);
-      alert("Formatted JSON copied to clipboard!");
+      setCopyToClipboard("Copied");
+      setTimeout(() => {
+        setCopyToClipboard("Copy to Clipboard");
+      }, 2000);
     } catch {
       alert("Failed to copy!");
     }
@@ -115,17 +119,15 @@ export default function JsonFormatterPage() {
             <div className="flex justify-end gap-4 mb-4">
               <button
                 onClick={handleCopy}
-                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 disabled:opacity-50"
-                disabled={!output}
+                className="border border-white rounded-md bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
               >
-                📋 Copy
+                {copyToClipboard}
               </button>
               <button
                 onClick={handleDownload}
-                className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 disabled:opacity-50"
-                disabled={!output}
+                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
               >
-                📄 Download
+                Download JSON
               </button>
             </div>
             <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 text-sm overflow-auto">
