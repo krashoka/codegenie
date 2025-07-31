@@ -20,7 +20,7 @@ export default function Home() {
           <ToolCard title="JSON Formatter" description="Format and beautify JSON data instantly." navigationLink="/tools/json-formatter"/>
           <ToolCard title="UUID Generator" description="Generate unique UUIDs for any purpose." navigationLink="/tools/uuid-generator"/>
           <ToolCard title="Base64 Encoder/Decoder" description="Encode or decode Base64 strings easily." navigationLink="#"/>
-          <ToolCard title="Lorem Ipsum Generator" description="Quickly generate placeholder text." navigationLink="#"/>
+          <ToolCard title="Lorem Ipsum Generator" description="Quickly generate placeholder text." navigationLink="/tools/lorem-ipsum-generator"/>
           <ToolCard title="Case Converter" description="Convert text to uppercase, lowercase, and more." navigationLink="#"/>
           <ToolCard title="Timestamp Converter" description="Convert UNIX timestamps to readable formats." navigationLink="#"/>
         </section>

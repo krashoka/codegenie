@@ -8,12 +8,7 @@ import { Sun, Moon } from "lucide-react";
 
 export default function Header() {
   return (
-    // <header className="w-full px-4 py-6 border-b bg-white dark:bg-gray-900 dark:border-gray-700 shadow-sm">
-    //   <Link href="/" className="text-xl font-bold text-white-600">
-    //     CodeGenie
-    //   </Link>
-    // </header>
-    <header className="bg-white shadow-sm p-4 mb-6">
+    <header className="bg-white shadow-sm p-5 mb-6">
       <nav className="max-w-4xl mx-auto flex justify-between">
         <Link href="/" className="font-bold text-2xl text-[#0f1628]">
           CodeGenie
