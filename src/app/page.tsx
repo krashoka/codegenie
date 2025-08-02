@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import ToolCard from "@/components/ToolCard";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
           <ToolCard title="Base64 Encoder/Decoder" description="Encode or decode Base64 strings easily." navigationLink="#"/>
           <ToolCard title="Lorem Ipsum Generator" description="Quickly generate placeholder text." navigationLink="/tools/lorem-ipsum-generator"/>
           <ToolCard title="Case Converter" description="Convert text to uppercase, lowercase, and more." navigationLink="#"/>
-          <ToolCard title="Timestamp Converter" description="Convert UNIX timestamps to readable formats." navigationLink="#"/>
+          <ToolCard title="Timestamp Converter" description="Convert between UNIX timestamps and human-readable date formats." navigationLink="/tools/timestamp-converter"/>
         </section>
       </main>
     </div>
