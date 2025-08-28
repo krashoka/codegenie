@@ -84,13 +84,13 @@ export default function TimestampConverter() {
     <>
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900">
-        <h1 className="text-3xl font-bold text-white mb-6">
+        <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">
           Timestamp Converter
         </h1>
         <p className="text-gray-400">
           Convert between UNIX timestamps and human-readable date formats.
         </p>
-        <div className="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-xl shadow-md text-[#0f1628]">
+        <div className="max-w-4xl mx-auto mt-10 bg-[#1e2a3a] p-6 rounded-xl shadow-md text-[#fbfaf9]">
           <div className="mb-4">
             <label className="font-medium mr-2">Timezone:</label>
             <select
@@ -98,11 +98,21 @@ export default function TimestampConverter() {
               onChange={(e) => setTimezoneValue(e.target.value)}
               className="border rounded px-3 py-2"
             >
-              <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
-              <option value="UTC">UTC</option>
-              <option value="America/New_York">America/New_York (EST)</option>
-              <option value="Europe/London">Europe/London (GMT)</option>
-              <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+              <option value="Asia/Kolkata" className="text-[#1e2a3a]">
+                Asia/Kolkata (IST)
+              </option>
+              <option value="UTC" className="text-[#1e2a3a]">
+                UTC
+              </option>
+              <option value="America/New_York" className="text-[#1e2a3a]">
+                America/New_York (EST)
+              </option>
+              <option value="Europe/London" className="text-[#1e2a3a]">
+                Europe/London (GMT)
+              </option>
+              <option value="Asia/Tokyo" className="text-[#1e2a3a]">
+                Asia/Tokyo (JST)
+              </option>
             </select>
           </div>
 
@@ -116,19 +126,22 @@ export default function TimestampConverter() {
               className="w-full border rounded px-3 py-2"
             />
             {readable && (
-              <div className="bg-gray-100 mt-3 p-3 rounded flex justify-between items-center">
+              <div className="bg-gray-100 mt-3 p-3 rounded flex justify-between items-center text-[#1e2a3a]">
                 <span>
                   <strong>Readable:</strong> {readable}
                 </span>
                 <button
                   onClick={() => handleCopy(readable, "readable")}
-                  className="ml-4"
+                  className="ml-4 cursor-pointer"
                 >
-                  {/* <Copy size={16} /> */}
                   {copiedField === "readable" ? (
-                    <CheckCheck size={16} />
+                    <div className="flex items-center gap-1">
+                      <CheckCheck size={16} /> Copied
+                    </div>
                   ) : (
-                    <Copy size={16} />
+                    <div className="flex items-center gap-1">
+                      <Copy size={16} /> Copy
+                    </div>
                   )}
                 </button>
               </div>
@@ -155,18 +168,22 @@ export default function TimestampConverter() {
               />
             </div>
             {convertedUnix && (
-              <div className="bg-gray-100 mt-3 p-3 rounded flex justify-between items-center">
+              <div className="bg-gray-100 mt-3 p-3 rounded flex justify-between items-center text-[#1e2a3a]">
                 <span>
                   <strong>UNIX Timestamp:</strong> {convertedUnix}
                 </span>
                 <button
                   onClick={() => handleCopy(convertedUnix, "unix")}
-                  className="ml-4"
+                  className="ml-4 cursor-pointer"
                 >
                   {copiedField === "unix" ? (
-                    <CheckCheck size={16} />
+                    <div className="flex items-center gap-1">
+                      <CheckCheck size={16} /> Copied
+                    </div>
                   ) : (
-                    <Copy size={16} />
+                    <div className="flex items-center gap-1">
+                      <Copy size={16} /> Copy
+                    </div>
                   )}
                 </button>
               </div>

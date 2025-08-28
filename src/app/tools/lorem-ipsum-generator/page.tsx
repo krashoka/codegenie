@@ -60,7 +60,7 @@ export default function LoremIpsumPage() {
     <>
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900">
-        <h1 className="text-3xl font-bold text-white mb-6">
+        <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">
           Lorem Ipsum Generator
         </h1>
         <div className="flex items-center gap-3 mb-6">
@@ -74,7 +74,7 @@ export default function LoremIpsumPage() {
           <select
             value={type}
             onChange={(e) => setType(e.target.value as any)}
-            className="border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           >
             <option value="paragraphs" className="text-[#0f1628]">
               Paragraphs
@@ -96,7 +96,7 @@ export default function LoremIpsumPage() {
 
         {output && (
           <>
-            <div className="max-h-[55vh] overflow-y-auto bg-gray-100 p-4 rounded mb-4 whitespace-pre-line text-gray-800">
+            <div className="max-h-[55vh] overflow-y-auto bg-[#1e2a3a] p-4 rounded mb-4 whitespace-pre-line text-[#fbfaf9]">
               {type === "paragraphs" ? (
                 output.split("\n").map((p, idx) => (
                   <p key={idx} className="mb-2">
