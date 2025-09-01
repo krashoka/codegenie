@@ -20,7 +20,7 @@ export default function Home() {
           <ToolCard title="UUID Generator" description="Generate unique UUIDs for any purpose." navigationLink="/tools/uuid-generator"/>
           <ToolCard title="Base64 Encoder/Decoder" description="Encode or decode Base64 strings easily." navigationLink="#"/>
           <ToolCard title="Lorem Ipsum Generator" description="Quickly generate placeholder text." navigationLink="/tools/lorem-ipsum-generator"/>
-          <ToolCard title="Case Converter" description="Convert text to uppercase, lowercase, and more." navigationLink="#"/>
+          <ToolCard title="Case Converter" description="Convert text to uppercase, lowercase, and more." navigationLink="/tools/case-converter"/>
           <ToolCard title="Timestamp Converter" description="Convert between UNIX timestamps and human-readable date formats." navigationLink="/tools/timestamp-converter"/>
         </section>
       </main>
