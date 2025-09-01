@@ -10,17 +10,21 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
+    "file-saver": "^2.0.5",
     "lorem-ipsum": "^2.0.8",
     "lucide-react": "^0.534.0",
     "next": "15.4.5",
+    "qrcode.react": "^4.2.0",
     "react": "19.1.0",
     "react-datepicker": "^8.4.0",
     "react-dom": "19.1.0",
-    "react-syntax-highlighter": "^15.6.1"
+    "react-syntax-highlighter": "^15.6.1",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
