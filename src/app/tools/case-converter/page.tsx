@@ -47,26 +47,23 @@ export default function CaseConverter() {
   }
 
   function handleReset() {
-    setText('')
-    setConverted('');
+    setText("");
+    setConverted("");
   }
 
   return (
     <>
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900">
-      <div className="flex items-center justify-between gap-1 mb-6">
-        <h1 className="text-3xl font-bold text-white">Case Converter</h1>
+        <div className="flex items-center justify-between gap-1 mb-6">
+          <h1 className="text-3xl font-bold text-white">Case Converter</h1>
 
-        <button
-          onClick={() => handleReset()}
-          className="ml-4 cursor-pointer"
-          >
-          <div className="flex items-center gap-1">
-            <RotateCcw size={16} /> Reset
-          </div>
-        </button>
+          <button onClick={() => handleReset()} className="ml-4 cursor-pointer">
+            <div className="flex items-center gap-1">
+              <RotateCcw size={16} /> Reset
             </div>
+          </button>
+        </div>
 
         <div className="flex flex-col md:flex-row items-start gap-4 mb-6 w-full">
           <textarea
@@ -111,25 +108,32 @@ export default function CaseConverter() {
             className="w-full h-65 max-h-70 p-3 rounded-lg bg-gray-700 text-white"
             placeholder="Converted text will appear here..."
           ></textarea>
-          <button onClick={() => handleCopy()} className="ml-4 cursor-pointer">
-            {copy === "Copy" ? (
-              <div className="flex items-center gap-1">
-                <CheckCheck size={16} /> {copy}
-              </div>
-            ) : (
-              <div className="flex items-center gap-1">
-                <Copy size={16} /> {copy}
-              </div>
-            )}
-          </button>
-          <button
-            onClick={() => handleDownload()}
-            className="ml-4 cursor-pointer"
-          >
-            <div className="flex items-center gap-1">
-              <Download size={16} /> Download
-            </div>
-          </button>
+          {converted && (
+            <>
+              <button
+                onClick={() => handleCopy()}
+                className="ml-4 cursor-pointer"
+              >
+                {copy === "Copy" ? (
+                  <div className="flex items-center gap-1">
+                    <Copy size={16} /> {copy}
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-1">
+                    <CheckCheck size={16} /> {copy}
+                  </div>
+                )}
+              </button>
+              <button
+                onClick={() => handleDownload()}
+                className="ml-4 cursor-pointer"
+              >
+                <div className="flex items-center gap-1">
+                  <Download size={16} /> Download
+                </div>
+              </button>
+            </>
+          )}
         </div>
       </main>
     </>
