@@ -32,6 +32,7 @@ export default function LoremIpsumPage() {
     setOutput(result);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     generate(); // Generate content on mount
   }, []);
@@ -74,7 +75,7 @@ export default function LoremIpsumPage() {
             />
             <select
               value={type}
-              onChange={(e) => setType(e.target.value as any)}
+              onChange={(e) => setType(e.target.value as "paragraphs" | "sentences" | "words")}
               className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
               <option value="paragraphs" className="text-[#0f1628]">
