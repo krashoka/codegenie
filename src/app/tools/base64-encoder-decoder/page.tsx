@@ -53,7 +53,7 @@ export default function Base64EncoderDecoder() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white">
+      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white mt-6">
         <h1 className="text-3xl font-bold mb-6">Base64 Encoder/Decoder</h1>
 
         <div className="flex flex-col md:flex-row gap-6 w-full">

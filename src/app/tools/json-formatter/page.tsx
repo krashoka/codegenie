@@ -78,16 +78,16 @@ export default function JsonFormatterPage() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white">
-        <div className="flex justify-between items-end mb-6">
-          <div>
-            <h1 className="text-3xl font-bold mb-4">JSON Formatter</h1>
-            <p className="text-gray-400">
-              Paste your JSON below. It formats automatically as you type.
-            </p>
-          </div>
-          <h2 className="text-gray-300">- OR -</h2>
-          <div>
+      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white mt-6">
+        <h1 className="text-3xl font-bold mb-4">JSON Formatter</h1>
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-6 space-y-3 sm:space-y-0">
+          <p className="text-gray-400">
+            Paste your JSON below. It formats automatically as you type.
+          </p>
+
+          <h2 className="text-gray-300 text-center sm:text-left">- OR -</h2>
+
+          <div className="flex justify-center sm:justify-end">
             <button
               onClick={triggerFileInput}
               className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"

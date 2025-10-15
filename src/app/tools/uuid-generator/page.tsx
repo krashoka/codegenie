@@ -32,12 +32,12 @@ export default function UUIDGenerator() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900">
+      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
           <h1 className="text-3xl font-bold text-white mb-6">
             UUID Generator
           </h1>
 
-          <div className="flex flex-col md:flex-row items-end gap-4 mb-6">
+          <div className="flex flex-col md:flex-row items-start md:items-end gap-4 mb-6">
             <div>
               <label className="block font-medium mb-1">Select Version</label>
               <select
@@ -60,14 +60,15 @@ export default function UUIDGenerator() {
                 onChange={(e) => setCount(Number(e.target.value))}
                 className="border p-2 rounded w-24"
               />
-            </div>
-
-            <button
+              <button
               onClick={generateUUIDs}
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition ml-4"
               >
               Generate
             </button>
+            </div>
+
+            
           </div>
 
           {uuids.length > 0 && (
