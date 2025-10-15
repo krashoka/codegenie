@@ -59,36 +59,39 @@ export default function LoremIpsumPage() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900">
+      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
         <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">
           Lorem Ipsum Generator
         </h1>
-        <div className="flex items-center gap-3 mb-6">
-          <input
-            type="number"
-            value={count}
-            min={1}
-            onChange={(e) => setCount(Number(e.target.value))}
-            className="border px-3 py-2 rounded-md w-20"
-          />
-          <select
-            value={type}
-            onChange={(e) => setType(e.target.value as any)}
-            className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-          >
-            <option value="paragraphs" className="text-[#0f1628]">
-              Paragraphs
-            </option>
-            <option value="sentences" className="text-[#0f1628]">
-              Sentences
-            </option>
-            <option value="words" className="text-[#0f1628]">
-              Words
-            </option>
-          </select>
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3 mb-6">
+          <div>
+            <input
+              type="number"
+              value={count}
+              min={1}
+              onChange={(e) => setCount(Number(e.target.value))}
+              className="border px-3 py-2 rounded-md w-20 mr-3"
+            />
+            <select
+              value={type}
+              onChange={(e) => setType(e.target.value as any)}
+              className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            >
+              <option value="paragraphs" className="text-[#0f1628]">
+                Paragraphs
+              </option>
+              <option value="sentences" className="text-[#0f1628]">
+                Sentences
+              </option>
+              <option value="words" className="text-[#0f1628]">
+                Words
+              </option>
+            </select>
+          </div>
+
           <button
             onClick={generate}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full md:w-auto"
           >
             Generate
           </button>
@@ -108,16 +111,17 @@ export default function LoremIpsumPage() {
               )}
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={handleCopy}
-                className="border border-white rounded-md bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
+                className="border border-white rounded-md bg-gray-800 text-white px-4 py-2 hover:bg-gray-900 whitespace-nowrap"
               >
                 {copyToClipboard}
               </button>
+
               <button
                 onClick={handleDownload}
-                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 whitespace-nowrap"
               >
                 Download .txt
               </button>
