@@ -16,14 +16,14 @@ export default function PrivacyPolicy() {
 
         <section className="space-y-6 leading-relaxed">
           <p>
-            At <strong>CodeGenie</strong> (accessible from{" "}
+            At <strong>CodingGenie</strong> (accessible from{" "}
             <a
-              href="https://codegenie-sandy.vercel.app"
+              href="https://codinggenie.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline"
             >
-              https://codegenie-sandy.vercel.app
+              https://codinggenie.vercel.app
             </a>
             ), your privacy is our top priority. This Privacy Policy explains
             how we collect, use, and protect your information when you use our

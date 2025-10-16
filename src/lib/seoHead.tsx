@@ -17,7 +17,7 @@ export default function SeoHead({
 }: SeoHeadProps) {
   useEffect(() => {
     // Canonical Link
-    const canonicalUrl = `https://codegenie-sandy.vercel.app${canonicalPath}`;
+    const canonicalUrl = `https://codinggenie.vercel.app${canonicalPath}`;
     let canonicalTag = document.querySelector("link[rel='canonical']");
     if (!canonicalTag) {
       canonicalTag = document.createElement("link");
@@ -42,8 +42,8 @@ export default function SeoHead({
       },
       creator: {
         "@type": "Organization",
-        name: "CodeGenie",
-        url: "https://codegenie-sandy.vercel.app",
+        name: "CodingGenie",
+        url: "https://codinggenie.vercel.app",
       },
     };
 
@@ -66,9 +66,9 @@ export default function SeoHead({
       <meta property="og:description" content={description} />
       <meta
         property="og:url"
-        content={`https://codegenie-sandy.vercel.app${canonicalPath}`}
+        content={`https://codinggenie.vercel.app${canonicalPath}`}
       />
-      <meta property="og:site_name" content="CodeGenie" />
+      <meta property="og:site_name" content="CodingGenie" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
