@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import { CheckCheck, Copy } from "lucide-react";
+import SeoHead from "@/lib/seoHead";
 
 export default function Base64EncoderDecoder() {
   const [input, setInput] = useState("");
@@ -36,7 +37,7 @@ export default function Base64EncoderDecoder() {
     setInput("");
     setOutput("");
     setIsError(false);
-};
+  };
 
   async function handleCopy() {
     try {
@@ -52,6 +53,12 @@ export default function Base64EncoderDecoder() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="Base64 Encoder & Decoder Online"
+        description="Encode or decode Base64 strings instantly. Free online Base64 converter by CodeGenie."
+        canonicalPath="/base64-encoder-decoder"
+      />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white mt-6">
         <h1 className="text-3xl font-bold mb-6">Base64 Encoder/Decoder</h1>

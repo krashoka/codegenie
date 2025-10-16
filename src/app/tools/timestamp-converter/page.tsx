@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { CheckCheck, Copy } from "lucide-react";
+import SeoHead from "@/lib/seoHead";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -82,6 +83,12 @@ export default function TimestampConverter() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="Timestamp Converter — UNIX to Date and Back"
+        description="Convert between UNIX timestamps and human-readable date formats easily."
+        canonicalPath="/timestamp-converter"
+      />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
         <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">

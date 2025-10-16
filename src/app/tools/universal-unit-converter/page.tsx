@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import { ArrowLeftRight, CheckCheck, Copy } from "lucide-react";
+import SeoHead from "@/lib/seoHead";
 
 export default function UnitConverter() {
   const [leftValue, setLeftValue] = useState("10");
@@ -117,10 +118,16 @@ export default function UnitConverter() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="Universal Unit Converter — PX to REM, EM, %, VW, VH"
+        description="Convert between PX, REM, EM, %, VW, and VH with real-time updates. Simple and accurate."
+        canonicalPath="/timestamp-converter"
+      />
       <Header />
       <main
         className="bg-[#0f0f0f] text-white flex flex-col items-center justify-center px-4"
-        style={{ minHeight: "calc(100vh - 80px)" }}
+        style={{ minHeight: "calc(100vh - 90px)" }}
       >
         <h1 className="text-2xl font-semibold mb-8 text-gray-200">
           Universal Unit Converter
@@ -136,7 +143,7 @@ export default function UnitConverter() {
           <div className="flex flex-col items-center w-full relative">
             <button
               className="absolute left-3 top-1/3 -translate-y-1/2 text-gray-400 hover:text-white"
-              onClick={() => handleCopy(leftValue, 'left')}
+              onClick={() => handleCopy(leftValue, "left")}
             >
               {copyL ? <CheckCheck size={16} /> : <Copy size={16} />}
             </button>
@@ -185,7 +192,7 @@ export default function UnitConverter() {
           <div className="flex flex-col items-center w-full relative">
             <button
               className="absolute left-3 top-1/3 -translate-y-1/2 text-gray-400 hover:text-white"
-              onClick={() => handleCopy(rightValue, 'right')}
+              onClick={() => handleCopy(rightValue, "right")}
             >
               {copyR ? <CheckCheck size={16} /> : <Copy size={16} />}
             </button>

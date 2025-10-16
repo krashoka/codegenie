@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
+import SeoHead from "@/lib/seoHead";
 import { useState, useEffect, useRef } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -77,6 +78,12 @@ export default function JsonFormatterPage() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="JSON Formatter Online — Beautify & Format JSON Instantly"
+        description="Format and beautify JSON data online for free with CodeGenie. Easy, fast, and reliable."
+        canonicalPath="/json-formatter"
+      />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white mt-6">
         <h1 className="text-3xl font-bold mb-4">JSON Formatter</h1>

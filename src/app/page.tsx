@@ -1,3 +1,24 @@
+export const metadata = {
+  title: "CodeGenie — Free Developer Tools Online",
+  description:
+    "A collection of free, powerful, and easy-to-use developer tools — all in one place.",
+  openGraph: {
+    title: "CodeGenie — Free Developer Tools Online",
+    description:
+      "A collection of free, powerful, and easy-to-use developer tools — all in one place.",
+    url: "https://codegenie-sandy.vercel.app/",
+    siteName: "CodeGenie",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CodeGenie — Free Developer Tools Online",
+    description:
+      "A collection of free, powerful, and easy-to-use developer tools — all in one place.",
+  },
+};
+
+
 import Header from "@/components/Header";
 import ToolCard from "@/components/ToolCard";
 
@@ -5,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="max-w-4xl mx-auto pt-8 pb-8 px-4">
+      <main className="max-w-4xl mx-auto pt-8 pb-6 px-4">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white-900 mb-4">
             Welcome to <span className="text-blue-600">CodeGenie</span>

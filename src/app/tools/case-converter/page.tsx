@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import { CheckCheck, Copy, Download, RotateCcw } from "lucide-react";
+import SeoHead from "@/lib/seoHead";
 
 export default function CaseConverter() {
   const [text, setText] = useState("");
@@ -53,6 +54,12 @@ export default function CaseConverter() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="Case Converter — Uppercase, Lowercase, Capitalize Text"
+        description="Convert your text to uppercase, lowercase, or title case instantly online."
+        canonicalPath="/case-converter"
+      />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
         <div className="flex items-center justify-between gap-1 mb-6">
