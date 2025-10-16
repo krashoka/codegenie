@@ -37,17 +37,17 @@ export default function Contact() {
             Follow & Share
           </h2>
           <p>
-            Share CodeGenie with your friends and colleagues — the more
+            Share CodingGenie with your friends and colleagues — the more
             developers it helps, the better!
           </p>
           <ul className="list-disc list-inside mt-3 space-y-1">
             <li>
               🌐 Website:{" "}
               <a
-                href="https://codegenie-sandy.vercel.app"
+                href="https://codinggenie.vercel.app"
                 className="text-blue-400 hover:underline"
               >
-                codegenie-sandy.vercel.app
+                codinggenie.vercel.app
               </a>
             </li>
             {/* <li>
@@ -73,7 +73,7 @@ export default function Contact() {
 
         <p className="mt-12 text-gray-400 text-sm">
           Thank you for using{" "}
-          <span className="font-semibold text-blue-400">CodeGenie</span>. Every
+          <span className="font-semibold text-blue-400">CodingGenie</span>. Every
           suggestion helps make our tools better for developers worldwide.
         </p>
       </main>

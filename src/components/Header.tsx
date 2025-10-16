@@ -26,7 +26,7 @@ export default function Header() {
     <header className="bg-black shadow-sm p-5 border-b border-b-[#3f434c]">
       <nav className="max-w-4xl mx-auto flex justify-between items-center relative">
         <Link href="/" className="font-bold text-2xl text-[#fbfaf9]">
-          CodeGenie
+          CodingGenie
         </Link>
 
         <div className="relative" ref={menuRef}>

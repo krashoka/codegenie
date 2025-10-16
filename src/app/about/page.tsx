@@ -7,10 +7,10 @@ export default function About() {
     <>
       <Header />
       <main className="max-w-3xl mx-auto px-6 py-12 text-gray-300">
-        <h1 className="text-4xl font-bold mb-6 text-white">About CodeGenie</h1>
+        <h1 className="text-4xl font-bold mb-6 text-white">About CodingGenie</h1>
         <p className="text-lg mb-8 leading-relaxed">
           Welcome to{" "}
-          <span className="font-semibold text-blue-400">CodeGenie</span> — a
+          <span className="font-semibold text-blue-400">CodingGenie</span> — a
           collection of free, powerful, and easy-to-use developer tools, all in
           one place. Our mission is simple: to make developers’ everyday
           workflows faster, cleaner, and more efficient.
@@ -23,7 +23,7 @@ export default function About() {
             </h2>
             <p>
               Whether you need to format JSON, generate UUIDs, or convert design
-              units, CodeGenie provides instant tools with a clean and
+              units, CodingGenie provides instant tools with a clean and
               distraction-free interface.
             </p>
             <ul className="list-disc list-inside mt-3 space-y-1">
@@ -42,7 +42,7 @@ export default function About() {
               Our Mission
             </h2>
             <p>
-              CodeGenie is built with one goal in mind —{" "}
+              CodingGenie is built with one goal in mind —{" "}
               <span className="text-blue-400 font-medium">
                 simplifying developer productivity
               </span>
@@ -53,7 +53,7 @@ export default function About() {
 
           <div>
             <h2 className="text-2xl font-semibold text-white mb-3">
-              Why Choose CodeGenie?
+              Why Choose CodingGenie?
             </h2>
             <ul className="list-disc list-inside mt-3 space-y-1">
               <li>Completely free and browser-based</li>
@@ -66,7 +66,7 @@ export default function About() {
           <div>
             <h2 className="text-2xl font-semibold text-white mb-3">Creator</h2>
             <p>
-              CodeGenie was created by{" "}
+              CodingGenie was created by{" "}
               <span className="font-semibold text-blue-400">Ashok Kumar</span>,
               a passionate web developer who loves building tools that empower
               others to code smarter, not harder.
