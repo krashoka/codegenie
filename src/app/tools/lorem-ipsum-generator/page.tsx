@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import { LoremIpsum } from "lorem-ipsum";
+import SeoHead from "@/lib/seoHead";
 
 export default function LoremIpsumPage() {
   const [count, setCount] = useState(5);
@@ -59,6 +60,12 @@ export default function LoremIpsumPage() {
 
   return (
     <>
+      {/* ✅ SEO Component */}
+      <SeoHead
+        title="Lorem Ipsum Generator — Free Placeholder Text Tool"
+        description="Generate realistic Lorem Ipsum text for designs and web layouts instantly."
+        canonicalPath="/lorem-ipsum-generator"
+      />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
         <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">
@@ -75,7 +82,9 @@ export default function LoremIpsumPage() {
             />
             <select
               value={type}
-              onChange={(e) => setType(e.target.value as "paragraphs" | "sentences" | "words")}
+              onChange={(e) =>
+                setType(e.target.value as "paragraphs" | "sentences" | "words")
+              }
               className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
               <option value="paragraphs" className="text-[#0f1628]">
