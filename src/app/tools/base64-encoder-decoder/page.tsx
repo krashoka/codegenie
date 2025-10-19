@@ -60,7 +60,7 @@ export default function Base64EncoderDecoder() {
         canonicalPath="/base64-encoder-decoder"
       />
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 text-white mt-6">
+      <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold mb-6">Base64 Encoder/Decoder</h1>
 
         <div className="flex flex-col md:flex-row gap-6 w-full">

@@ -39,7 +39,7 @@ export default function UUIDGenerator() {
         canonicalPath="/timestamp-converter"
       />
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
+      <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold text-white mb-6">UUID Generator</h1>
 
         <div className="flex flex-col md:flex-row items-start md:items-end gap-4 mb-6">

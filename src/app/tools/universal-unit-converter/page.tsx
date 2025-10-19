@@ -126,7 +126,7 @@ export default function UnitConverter() {
       />
       <Header />
       <main
-        className="bg-[#0f0f0f] text-white flex flex-col items-center justify-center px-4"
+        className="text-white flex flex-col items-center justify-center px-4"
         style={{ minHeight: "calc(100vh - 90px)" }}
       >
         <h1 className="text-2xl font-semibold mb-8 text-gray-200">

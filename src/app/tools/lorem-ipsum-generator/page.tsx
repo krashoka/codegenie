@@ -67,7 +67,7 @@ export default function LoremIpsumPage() {
         canonicalPath="/lorem-ipsum-generator"
       />
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 bg-gray-900 mt-6">
+      <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold text-[#fbfaf9] mb-6">
           Lorem Ipsum Generator
         </h1>
