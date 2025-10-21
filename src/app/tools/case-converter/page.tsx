@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import { CheckCheck, Copy, Download, RotateCcw } from "lucide-react";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 export default function CaseConverter() {
   const [text, setText] = useState("");
@@ -59,6 +60,13 @@ export default function CaseConverter() {
         title="Case Converter — Uppercase, Lowercase, Capitalize Text"
         description="Convert your text to uppercase, lowercase, or title case instantly online."
         canonicalPath="/case-converter"
+        keywords={[
+          "case converter",
+          "uppercase to lowercase",
+          "text case changer",
+          "convert text case online",
+          "title case converter",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -142,6 +150,26 @@ export default function CaseConverter() {
             </>
           )}
         </div>
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is a Case Converter?",
+              answer:
+                "It's a tool that lets you change text case — uppercase, lowercase, title case, and more — instantly.",
+            },
+            {
+              question: "Can I paste long paragraphs?",
+              answer:
+                "Yes, you can paste large amounts of text, and the converter will change all cases accordingly.",
+            },
+            {
+              question: "Is it free to use?",
+              answer:
+                "Yes, the Case Converter tool on CodingGenie is 100% free and requires no sign-up.",
+            },
+          ]}
+        />
       </main>
     </>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import FaqSection from "@/components/FaqSection";
 import Header from "@/components/Header";
 import SeoHead from "@/lib/seoHead";
 import { useState, useEffect, useRef } from "react";
@@ -83,6 +84,14 @@ export default function JsonFormatterPage() {
         title="JSON Formatter Online — Beautify & Format JSON Instantly"
         description="Format and beautify JSON data online for free with CodingGenie. Easy, fast, and reliable."
         canonicalPath="/json-formatter"
+        keywords={[
+          "JSON formatter",
+          "JSON beautifier",
+          "online JSON validator",
+          "format JSON online",
+          "prettify JSON",
+          "JSON editor",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -144,6 +153,26 @@ export default function JsonFormatterPage() {
             </div>
           </>
         )}
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is a JSON Formatter?",
+              answer:
+                "A JSON Formatter is a tool that formats and beautifies JSON data, making it easier to read and debug.",
+            },
+            {
+              question: "Is my JSON data secure on CodingGenie?",
+              answer:
+                "Yes. All JSON processing happens locally in your browser. Your data never leaves your device.",
+            },
+            {
+              question: "Can I validate JSON with this tool?",
+              answer:
+                "Yes, CodingGenie's JSON Formatter also checks for syntax errors and invalid JSON structures.",
+            },
+          ]}
+        />
       </main>
     </>
   );

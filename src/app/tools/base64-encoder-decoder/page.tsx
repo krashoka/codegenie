@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import { CheckCheck, Copy } from "lucide-react";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 export default function Base64EncoderDecoder() {
   const [input, setInput] = useState("");
@@ -58,6 +59,13 @@ export default function Base64EncoderDecoder() {
         title="Base64 Encoder & Decoder Online"
         description="Encode or decode Base64 strings instantly. Free online Base64 converter by CodingGenie."
         canonicalPath="/base64-encoder-decoder"
+        keywords={[
+          "base64 encoder",
+          "base64 decoder",
+          "encode decode base64",
+          "convert text to base64",
+          "decode base64 online",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -128,6 +136,26 @@ export default function Base64EncoderDecoder() {
             />
           </div>
         </div>
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is Base64 encoding?",
+              answer:
+                "Base64 encoding converts binary or text data into a text format that can be safely transmitted online.",
+            },
+            {
+              question: "Can I decode Base64 with this tool?",
+              answer:
+                "Yes, simply paste your encoded string and click decode to get the original text.",
+            },
+            {
+              question: "Is Base64 encryption?",
+              answer:
+                "No. Base64 is not encryption — it's just an encoding mechanism for data representation.",
+            },
+          ]}
+        />
       </main>
     </>
   );

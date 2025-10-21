@@ -6,6 +6,7 @@ import { QRCodeCanvas } from "qrcode.react";
 import { saveAs } from "file-saver";
 import Header from "@/components/Header";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 export default function UUIDGenerator() {
   const [version, setVersion] = useState<"v1" | "v4">("v4");
@@ -37,6 +38,13 @@ export default function UUIDGenerator() {
         title="UUID Generator — Generate Unique UUIDs Online"
         description="Create unique UUIDs instantly for testing, database keys, and development."
         canonicalPath="/timestamp-converter"
+        keywords={[
+          "uuid generator",
+          "generate uuid online",
+          "guid generator",
+          "create unique id",
+          "uuid v4 generator",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -110,6 +118,26 @@ export default function UUIDGenerator() {
             </div>
           </>
         )}
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is a UUID?",
+              answer:
+                "A UUID (Universally Unique Identifier) is a 128-bit value used to uniquely identify data across systems.",
+            },
+            {
+              question: "Which UUID version does this generator use?",
+              answer:
+                "CodingGenie generates UUID v4 identifiers, based on random numbers.",
+            },
+            {
+              question: "Can I generate multiple UUIDs at once?",
+              answer:
+                "Yes, you can generate several UUIDs with a single click.",
+            },
+          ]}
+        />
       </main>
     </>
   );

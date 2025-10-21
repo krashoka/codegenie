@@ -6,7 +6,8 @@ interface SeoHeadProps {
   title: string;
   description: string;
   canonicalPath: string;
-  toolCategory?: string; // optional
+  toolCategory?: string;
+  keywords?: string[]; // ✅ added
 }
 
 export default function SeoHead({
@@ -14,9 +15,9 @@ export default function SeoHead({
   description,
   canonicalPath,
   toolCategory = "DeveloperApplication",
+  keywords = [],
 }: SeoHeadProps) {
   useEffect(() => {
-    // Canonical Link
     const canonicalUrl = `https://codinggenie.vercel.app${canonicalPath}`;
     let canonicalTag = document.querySelector("link[rel='canonical']");
     if (!canonicalTag) {
@@ -26,10 +27,10 @@ export default function SeoHead({
     }
     canonicalTag.setAttribute("href", canonicalUrl);
 
-    // JSON-LD Structured Data
+    // ✅ Updated structured data type to SoftwareApplication
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": "SoftwareApplication",
       name: title,
       url: canonicalUrl,
       description,
@@ -45,6 +46,7 @@ export default function SeoHead({
         name: "CodingGenie",
         url: "https://codinggenie.vercel.app",
       },
+      keywords: keywords.join(", "),
     };
 
     const script = document.createElement("script");
@@ -55,13 +57,15 @@ export default function SeoHead({
     return () => {
       document.head.removeChild(script);
     };
-  }, [title, description, canonicalPath, toolCategory]);
+  }, [title, description, canonicalPath, toolCategory, keywords]);
 
   return (
     <>
-      {/* These help with dynamic SEO when rendered on client side */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      {keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(", ")} />
+      )}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta
