@@ -65,7 +65,7 @@ export default function LoremIpsumPage() {
       <SeoHead
         title="Lorem Ipsum Generator — Free Placeholder Text Tool"
         description="Generate realistic Lorem Ipsum text for designs and web layouts instantly."
-        canonicalPath="/lorem-ipsum-generator"
+        canonicalPath="/tools/lorem-ipsum-generator"
         keywords={[
           "lorem ipsum generator",
           "dummy text generator",

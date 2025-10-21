@@ -58,7 +58,7 @@ export default function Base64EncoderDecoder() {
       <SeoHead
         title="Base64 Encoder & Decoder Online"
         description="Encode or decode Base64 strings instantly. Free online Base64 converter by CodingGenie."
-        canonicalPath="/base64-encoder-decoder"
+        canonicalPath="/tools/base64-encoder-decoder"
         keywords={[
           "base64 encoder",
           "base64 decoder",

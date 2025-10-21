@@ -83,7 +83,7 @@ export default function JsonFormatterPage() {
       <SeoHead
         title="JSON Formatter Online — Beautify & Format JSON Instantly"
         description="Format and beautify JSON data online for free with CodingGenie. Easy, fast, and reliable."
-        canonicalPath="/json-formatter"
+        canonicalPath="/tools/json-formatter"
         keywords={[
           "JSON formatter",
           "JSON beautifier",

@@ -59,7 +59,7 @@ export default function CaseConverter() {
       <SeoHead
         title="Case Converter — Uppercase, Lowercase, Capitalize Text"
         description="Convert your text to uppercase, lowercase, or title case instantly online."
-        canonicalPath="/case-converter"
+        canonicalPath="/tools/case-converter"
         keywords={[
           "case converter",
           "uppercase to lowercase",
