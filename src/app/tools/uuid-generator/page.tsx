@@ -37,7 +37,7 @@ export default function UUIDGenerator() {
       <SeoHead
         title="UUID Generator — Generate Unique UUIDs Online"
         description="Create unique UUIDs instantly for testing, database keys, and development."
-        canonicalPath="/tools/timestamp-converter"
+        canonicalPath="/tools/uuid-generator"
         keywords={[
           "uuid generator",
           "generate uuid online",

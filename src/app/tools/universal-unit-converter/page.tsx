@@ -123,7 +123,7 @@ export default function UnitConverter() {
       <SeoHead
         title="Universal Unit Converter — PX to REM, EM, %, VW, VH"
         description="Convert between PX, REM, EM, %, VW, and VH with real-time updates. Simple and accurate."
-        canonicalPath="/tools/timestamp-converter"
+        canonicalPath="/tools/universal-unit-converter"
         keywords={[
           "px to rem converter",
           "css unit converter",
