@@ -88,7 +88,7 @@ export default function TimestampConverter() {
       <SeoHead
         title="Timestamp Converter — UNIX to Date and Back"
         description="Convert between UNIX timestamps and human-readable date formats easily."
-        canonicalPath="/timestamp-converter"
+        canonicalPath="/tools/timestamp-converter"
         keywords={[
           "timestamp converter",
           "unix time converter",
