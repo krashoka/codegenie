@@ -9,6 +9,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { CheckCheck, Copy } from "lucide-react";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -88,6 +89,12 @@ export default function TimestampConverter() {
         title="Timestamp Converter — UNIX to Date and Back"
         description="Convert between UNIX timestamps and human-readable date formats easily."
         canonicalPath="/timestamp-converter"
+        keywords={[
+          "timestamp converter",
+          "unix time converter",
+          "epoch to date converter",
+          "convert timestamp online",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -204,6 +211,26 @@ export default function TimestampConverter() {
             Reset All
           </button>
         </div>
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is a UNIX timestamp?",
+              answer:
+                "A UNIX timestamp is the number of seconds that have passed since January 1, 1970.",
+            },
+            {
+              question: "Can this tool convert both directions?",
+              answer:
+                "Yes, it converts UNIX timestamps to readable dates and dates back to timestamps.",
+            },
+            {
+              question: "Does it show time in local timezone?",
+              answer:
+                "Yes, the converted time automatically reflects your device's local timezone.",
+            },
+          ]}
+        />
       </main>
     </>
   );

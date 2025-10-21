@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import { ArrowLeftRight, CheckCheck, Copy } from "lucide-react";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 export default function UnitConverter() {
   const [leftValue, setLeftValue] = useState("10");
@@ -123,10 +124,18 @@ export default function UnitConverter() {
         title="Universal Unit Converter — PX to REM, EM, %, VW, VH"
         description="Convert between PX, REM, EM, %, VW, and VH with real-time updates. Simple and accurate."
         canonicalPath="/timestamp-converter"
+        keywords={[
+          "px to rem converter",
+          "css unit converter",
+          "px to em converter",
+          "vw vh converter",
+          "responsive design tools",
+          "convert px to rem online",
+        ]}
       />
       <Header />
       <main
-        className="text-white flex flex-col items-center justify-center px-4"
+        className="text-white flex flex-col items-center justify-center px-4 max-w-4xl mx-auto"
         style={{ minHeight: "calc(100vh - 90px)" }}
       >
         <h1 className="text-2xl font-semibold mb-8 text-gray-200">
@@ -235,6 +244,26 @@ export default function UnitConverter() {
           />{" "}
           px
         </p>
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What does this Unit Converter do?",
+              answer:
+                "It converts CSS units like PX, REM, EM, %, VW, and VH for responsive design.",
+            },
+            {
+              question: "Who can use this tool?",
+              answer:
+                "Web developers and designers can use it to create consistent, scalable layouts.",
+            },
+            {
+              question: "Is it accurate for all screen sizes?",
+              answer:
+                "Yes. The conversion uses standard CSS base values for accurate results across devices.",
+            },
+          ]}
+        />
       </main>
     </>
   );

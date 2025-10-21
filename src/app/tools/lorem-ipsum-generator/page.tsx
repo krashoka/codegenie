@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import { LoremIpsum } from "lorem-ipsum";
 import SeoHead from "@/lib/seoHead";
+import FaqSection from "@/components/FaqSection";
 
 export default function LoremIpsumPage() {
   const [count, setCount] = useState(5);
@@ -65,6 +66,13 @@ export default function LoremIpsumPage() {
         title="Lorem Ipsum Generator — Free Placeholder Text Tool"
         description="Generate realistic Lorem Ipsum text for designs and web layouts instantly."
         canonicalPath="/lorem-ipsum-generator"
+        keywords={[
+          "lorem ipsum generator",
+          "dummy text generator",
+          "placeholder text",
+          "generate lorem ipsum online",
+          "sample text generator",
+        ]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
@@ -138,6 +146,26 @@ export default function LoremIpsumPage() {
             </div>
           </>
         )}
+
+        <FaqSection
+          faqs={[
+            {
+              question: "What is Lorem Ipsum text?",
+              answer:
+                "Lorem Ipsum is dummy text used by designers and developers to fill space during design or development.",
+            },
+            {
+              question: "Can I choose the number of paragraphs or words?",
+              answer:
+                "Yes, you can select how many paragraphs or words you want to generate.",
+            },
+            {
+              question: "Is the generated text random each time?",
+              answer:
+                "Yes, CodingGenie's generator creates varied Lorem Ipsum text every time for more realistic placeholders.",
+            },
+          ]}
+        />
       </main>
     </>
   );
