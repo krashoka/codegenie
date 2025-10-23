@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 export default function Contact() {
   return (
     <>
-      <Header />
+      
       <main className="max-w-2xl mx-auto px-6 py-12 text-gray-300">
         <h1 className="text-4xl font-bold mb-6 text-white">Contact Us</h1>
         <p className="text-lg mb-8 leading-relaxed">

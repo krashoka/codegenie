@@ -19,13 +19,14 @@ export const metadata = {
   },
 };
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ToolCard from "@/components/ToolCard";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      
       <main className="max-w-4xl mx-auto pt-8 pb-6 px-4">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white-900 mb-4">

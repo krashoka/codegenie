@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 export default function About() {
   return (
     <>
-      <Header />
+      
       <main className="max-w-3xl mx-auto px-6 py-12 text-gray-300">
         <h1 className="text-4xl font-bold mb-6 text-white">About CodingGenie</h1>
         <p className="text-lg mb-8 leading-relaxed">

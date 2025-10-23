@@ -67,7 +67,7 @@ export default function Base64EncoderDecoder() {
           "decode base64 online",
         ]}
       />
-      <Header />
+      
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold mb-6">Base64 Encoder/Decoder</h1>
 

@@ -46,7 +46,7 @@ export default function UUIDGenerator() {
           "uuid v4 generator",
         ]}
       />
-      <Header />
+      
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold text-white mb-6">UUID Generator</h1>
 
