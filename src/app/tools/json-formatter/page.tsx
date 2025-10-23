@@ -93,7 +93,7 @@ export default function JsonFormatterPage() {
           "JSON editor",
         ]}
       />
-      <Header />
+      
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <h1 className="text-3xl font-bold mb-4">JSON Formatter</h1>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-6 space-y-3 sm:space-y-0">

@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 export default function PrivacyPolicy() {
   return (
     <>
-      <Header />
+      
       <main className="max-w-3xl mx-auto px-6 py-12 text-gray-300">
         <h1 className="text-4xl font-bold mb-6 text-white text-center">
           Privacy Policy

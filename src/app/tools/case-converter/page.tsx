@@ -68,7 +68,7 @@ export default function CaseConverter() {
           "title case converter",
         ]}
       />
-      <Header />
+      
       <main className="max-w-4xl mx-auto px-4 py-10 mt-6">
         <div className="flex items-center justify-between gap-1 mb-6">
           <h1 className="text-3xl font-bold text-white">Case Converter</h1>
