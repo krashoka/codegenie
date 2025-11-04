@@ -70,6 +70,15 @@ export default function RootLayout({
         <meta name="application-name" content="CodingGenie" />
         <meta name="apple-mobile-web-app-title" content="CodingGenie" />
         <meta name="theme-color" content="#0d1017" />
+        <meta name="author" content="CodingGenie" />
+        <meta name="publisher" content="CodingGenie" />
+        <meta property="og:site_name" content="CodingGenie" />
+        <meta
+          property="og:logo"
+          content="https://codinggenie.vercel.app/icon.png"
+        />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <link rel="canonical" href="https://codinggenie.vercel.app" />
 
         {/* ✅ Structured Data for Google (Website + Organization Schema) */}
         <script
@@ -88,6 +97,10 @@ export default function RootLayout({
                 name: "CodingGenie",
                 url: "https://codinggenie.vercel.app",
                 logo: "https://codinggenie.vercel.app/icon.png",
+                "sameAs": [
+                  "https://www.linkedin.com/company/codinggenie",
+                  "https://twitter.com/codinggenie"
+                ]
               },
             ]),
           }}

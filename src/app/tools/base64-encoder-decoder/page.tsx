@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Header from "@/components/Header";
 import { CheckCheck, Copy } from "lucide-react";
 import SeoHead from "@/lib/seoHead";
 import FaqSection from "@/components/FaqSection";
