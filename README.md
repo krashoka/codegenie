@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 CodingGenie — Developer Utility Toolkit (Next.js)
 
-## Getting Started
+CodingGenie is a fully responsive, modern **Next.js-based developer utility toolkit** containing 7 essential tools such as JSON Formatter, Case Converter, Unit Converter, Base64 Encoder/Decoder, Timestamp Converter, Lorem Ipsum Generator, and UUID Generator.
 
-First, run the development server:
+Designed with a clean UI, dark mode, reusable components, and optimized performance — this project serves as an excellent starter template for your own developer tools website or micro-SaaS.
 
+---
+
+## 🚀 Features
+
+- ⚡ Built with **Next.js + TypeScript**
+- 🌙 **Dark mode** support
+- 🧩 **7 fully-functional developer tools**
+- 📋 Copy-to-clipboard functionality
+- 📥 Download/export options
+- 📱 Fully responsive layout
+- 🎨 Clean and modern UI
+- 🧱 Modular and scalable folder structure
+- 🔍 SEO-friendly and fast
+
+---
+
+## 🛠 Included Tools
+
+1. **JSON Formatter & Beautifier**
+2. **Universal Unit Converter** (px ↔ rem ↔ % ↔ vw ↔ vh, etc.)
+3. **Base64 Encoder / Decoder**
+4. **Timestamp Converter**
+5. **Lorem Ipsum Generator**
+6. **UUID Generator**
+7. **Case Converter** (UPPERCASE, lowercase, snake_case, etc.)
+
+---
+
+## 📦 Project Structure
+├── app/ # Next.js App Router
+│ ├── tools/ # Individual tool pages & logic
+│ └── layout.tsx # App layout and theme provider
+├── components/ # UI and shared components
+├── styles/ # Global and component styles
+├── package.json
+├── tsconfig.json
+└── README.md
+
+## ⚙️ Installation & Setup
+
+### 1. Install Dependencies
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Then open:
+👉 http://localhost:3000
+
+🧩 Build for Production
+```bash
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can easily modify:
+- Layout and UI components
+- Add new utility tools
+- Extend logic for existing tools
+- Modify global styles
+- Add custom pages or APIs
 
-## Learn More
+The project is designed as a flexible starter kit for developers.
 
-To learn more about Next.js, take a look at the following resources:
+You may use, modify, or build upon this code for personal or commercial projects — including SaaS tools.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Please do not redistribute or resell this template as-is.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+🙌 Thank You
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for using CodingGenie!
+Feel free to reach out if you'd like help customizing or extending it.
